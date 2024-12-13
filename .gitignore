@@ -1,0 +1,11 @@
+# Abaikan file model besar
+/model/cnn_model_final.h5
+
+# Abaikan semua file yang dihasilkan oleh Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Abaikan file log
+*.log

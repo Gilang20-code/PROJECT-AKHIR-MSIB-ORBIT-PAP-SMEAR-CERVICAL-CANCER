@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="static/img/logo.png" rel="icon">
+  <link href="static/img/logo.png" rel="logo.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="static/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: QuickStart
+  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="static/img/logo.png" alt="">
+        <h1 class="sitename">{% block header %}{% endblock %}</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#home" class="active">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#prediksi">PREDIKSI</a></li>
+          <li><a href="#team">TEAM</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-4">
+          <h1 data-aos="fade-up">WELCOME TO <span>PAP SMEAR CERVICAL CANCER</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100">MEMBANTU UNTUK KLASIFIKASI DAN PREDIKSI <br></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">MULAI</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Contact Section -->
+    <section id="about" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>ABOUT</h2>
+        <p>Pap Smear Cervival Cancer yang dibangun oleh Kelompok 1 Kelas Awam Pintar digunakan sebagai klasifikasi dan prediksi servical cancer </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex flex-column justify-content-start px-3 text-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="tes">
+                <i class="bi bi-journal-text"></i>
+              </div>
+              <h3>01. DESKRIPSI</h3>
+              <p>Penelitian ini bertujuan mengembangkan repository data citra Pap smear sebagai upaya deteksi dini kanker serviks. Mengingat pentingnya identifikasi dini untuk mencegah kematian akibat kanker serviks, penelitian ini mencakup pembuatan data set berbasis medical imaging yang dapat diakses oleh peneliti untuk analisis dan pengembangan teknologi. Repository ini akan menyimpan citra digital Pap smear normal dan abnormal, serta berbagai jenis sel untuk mendukung riset lebih lanjut. Dengan kolaborasi antar laboratorium dan kelompok riset, repository ini diharapkan mempermudah akses data bagi penelitian kanker serviks di Indonesia dan internasional.
+              </p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="info-item d-flex m-auto flex-column justify-content-start px-3 text-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-globe2 "></i>
+              <h3>02. KEGUNAAN</h3>
+              <p>Situs web penelitian ini dirancang khusus untuk membantu dalam klasifikasi dan prediksi kanker serviks melalui citra medis. Platfrom ini mendukung upaya deteksi dini dan penilaian risiko kanker serviks untuk membantu memahami hasil diagnosis dengan cepat dan akurat.
+              </p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-start px-3 text-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-trophy"></i>
+              <h3>03.  KEUNGGULAN</h3>
+              <p>CNN dipilih karena memiliki akurasi tinggi dalam klasifikasi gambar medis, kemampuan ekstraksi fitur visual yang kuat, dan efisiensi komputasi yang baik. CNN juga lebih adaptif pada dataset besar, memungkinkan identifikasi pola visual spesifik pada sel kanker serviks untuk mendukung deteksi dini kanker dengan efektif</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+         
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+    <!-- About Section -->
+    
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+      <h1>DIDUKUNG OLEH</h1>
+
+      <div class="container d-flex" data-aos="fade-up">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="static/img/kampus-merdeka.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="static/img/orbit.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo p-4">
+            <img src="static/img/Universitas Pendidikan Indonesia.jpg" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo p-4">
+            <img src="static/img/umj.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+
+    <!-- Services Section -->
+    <section id="prediksi" class="services section light-background ">
+
+      <div class="container warnabiru">
+    
+        <div class="row g-5 d-flex justify-content-center">
+    
+          <div class="col-lg-10 " data-aos="fade-up" data-aos-delay="100">
+            <div class="item-cyan position-relative">
+              <div class="row">
+                <div class="col-md-12 mb-0 pb-0">
+                    <h1 class="text-center mb-0 text-white">PREDIKSI</h1>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <p class="text-center">MEMBANTU UNTUK MEMPREDIKSI DAN KLASIFIKASI BERDASARKAN CLASS</p>
+                </div>
+                <div class="col-md-12 mb-3 text-center">
+                    <form onsubmit="uploadImage(event)">
+                      <label for="images" class="drop-container mb-2 text-white" id="dropcontainer">
+                        <span class="drop-title">Drop files here</span>
+                        or
+                        <input type="file" id="formFileSm" name="file" required>
+                      </label>
+                      <button type="submit" class="btn btn-white">MULAI PREDIKSI</button>
+                    </form>
+                </div>
+                <div class="col-md-12">
+                    <div id="result">
+                      <div class="row text-center justify-content-center">
+                        <div class="col-md-3 mb-2 justify-content-center ">
+                            <img id="uploadedImage" class="align-self-center" src="" alt="Uploaded Image" style="max-width: 300px; display: none;">
+                        </div>
+                        <div class="col-md-12">
+                            <p id="predictionResult"></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div><!-- End Service Item -->
+            
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="team" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>TIM PROJECT 1</h2>
+        <p>K-2 KELAS AWAM PINTAR</p>
+        <p>ORANG - ORANG YANG BERPERAN DALAM PEMBUATAN PROJECT PAP SMEAR</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item ">
+                <div class="profile mt-5">
+                  <img src="static/img/testimonials/mulki.jpg" class="testimonial-img" alt="">
+                  <h3>MULKI DJENFIK DZULKARNAIN</h3>
+                  <h4>DATA ANALYST &amp; DATA SCIENCE</h4>
+                  <div class="mt-2">
+                    <a class="mx-2" href="https://www.instagram.com/dzlkrnnn/" target="_blank">
+                      <i class="bi bi-instagram text-danger fa-2x"></i>
+                    </a>
+                    <a class="mx-2" href="https://github.com/Mulki-Djenfik-Dzulkarnain" target="_blank">
+                      <i class="bi bi-github text-black"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-5">
+                  <img src="static/img/testimonials/jauza.jpg" class="testimonial-img" alt="">
+                  <h3>JAUZA MUMTAZ SAMIYAH</h3>
+                  <h4>PROJECT MANAGER</h4>
+                  <div class="mt-2">
+                    <a class="mx-2" href="https://www.instagram.com/_jzmmtz/" target="_blank">
+                      <i class="bi bi-instagram text-danger fa-2x"></i>
+                    </a>
+                    <a class="mx-2" href="https://github.com/jauzammtz" target="_blank">
+                      <i class="bi bi-github text-black"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-5">
+                  <img src="static/img/testimonials/heti.jpg" class="testimonial-img" alt="">
+                  <h3>HETI NOVITA SARI</h3>
+                  <h4>PROJECT MANAGER</h4>
+                  <div class="mt-2">
+                    <a class="mx-2" href="https://www.instagram.com/hsnovita/" target="_blank">
+                      <i class="bi bi-instagram text-danger fa-2x"></i>
+                    </a>
+                    <a class="mx-2" href="https://github.com/heti11" target="_blank">
+                      <i class="bi bi-github text-black"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="profile mt-5">
+                  <img src="static/img/testimonials/gilang.jpg" class="testimonial-img" alt="">
+                  <h3>GILANG RAMADHIKA</h3>
+                  <h4>DEPLOYMENT</h4>
+                  <div class="mt-2">
+                    <a class="mx-2" href="https://www.instagram.com/gilangrmdhka/" target="_blank">
+                      <i class="bi bi-instagram text-danger fa-2x"></i>
+                    </a>
+                    <a class="mx-2" href="https://github.com/Gilang20-code" target="_blank">
+                      <i class="bi bi-github text-black"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+
+    <div class="container copyright text-center mt-4">
+      <p>PROJECT <span>AKHIR</span> <strong class="px-1 sitename">KELOMPOK 1</strong><span>COMPUTER VISION</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <a style="margin-right:16px" href="https://kampusmerdeka.kemdikbud.go.id/">KAMPUS MERDEKA</a> <a href="https://orbitfutureacademy.id/">ORBIT FUTURE ACADEMY</a> 
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="static/js/main.js"></script>
+
+  <script>
+    function uploadImage(event) {
+        event.preventDefault();
+        
+        const formData = new FormData();
+        const fileInput = document.getElementById('formFileSm');
+        formData.append('file', fileInput.files[0]);
+
+        fetch('/', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                alert(data.error);
+            } else {
+              console.log(data)
+
+                // Tampilkan gambar
+            const uploadedImage = document.getElementById('uploadedImage');
+            uploadedImage.src = data.file_url;
+            uploadedImage.style.display = 'block';
+
+            // Tampilkan hasil prediksi
+            let class_labels = ['h-sil', 'l-sil', 'sel koilocyt', 'sel normal'];
+            document.getElementById('predictionResult').innerText = 
+                `Gambar ini diprediksi sebagai: ${class_labels[data.prediction]}`;
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+  </script>
+
+</body>
+
+</html>
